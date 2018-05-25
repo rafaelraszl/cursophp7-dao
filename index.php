@@ -34,11 +34,21 @@ $aluno->insert();
 
 echo $aluno;*/
 
+//Alterar um usuário
+/*
 $usuario = new Usuario();
 
 $usuario->loadById(15);
 
 $usuario->update("sidneia", "sidneiaciclovittal");
+
+echo $usuario;*/
+
+$usuario = new Usuario();
+
+$usuario->loadById(7);
+
+$usuario->delete();
 
 echo $usuario;
 
