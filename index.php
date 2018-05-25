@@ -22,8 +22,15 @@ echo json_encode($lista);*/
 echo json_encode($search);*/
 
 //Carrega um usuário usando o login e a senha
-$usuario = new Usuario();
+/*$usuario = new Usuario();
 $usuario->login("adm", "administrador");
-echo $usuario;
+echo $usuario;*/
+
+//
+$aluno = new Usuario("maze", "maze123");
+
+$aluno->insert();
+
+echo $aluno;
 
  ?>
