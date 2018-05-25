@@ -26,11 +26,20 @@ echo json_encode($search);*/
 $usuario->login("adm", "administrador");
 echo $usuario;*/
 
-//
+//Criando um novo usuario - Insert
+/*
 $aluno = new Usuario("maze", "maze123");
 
 $aluno->insert();
 
-echo $aluno;
+echo $aluno;*/
+
+$usuario = new Usuario();
+
+$usuario->loadById(15);
+
+$usuario->update("sidneia", "sidneiaciclovittal");
+
+echo $usuario;
 
  ?>
